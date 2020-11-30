@@ -1,0 +1,23 @@
+<div>
+    <table border="2">
+        <tr>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Student Java Marks</th>
+            <th>Student Math Marks</th>
+            <th>Student Science Marks</th>
+            <th>Average marks</th>
+        </tr>
+        <tr *ngFor="let s of sarr">
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.jmarks}}</td>
+            <td>{{s.mmarks}}</td>
+            <td>{{s.smarks}}</td>
+            <td>
+                {{(s.jmarks+s.mmarks+s.smarks)/3}}
+            </td>
+        </tr>
+    </table>
+
+</div>
